@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css starts here -->
+     <script src="https://cdn.tailwindcss.com"></script>
+       <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+           'primary': '#00856F',
+            "greenlight": "#DCE9E2",
+            'green-light-02' : "#F7F9F9",
+              'brand-beige'  : "#FFFAF1",
+            "brand-green-hover" : '#00453A '
+          },
+          fontFamily: {
+        'primary': ["DM Sans, sans-serif"],
+      },
+       
+
+        }
+      }
+    }
+  </script>
+  <!-- tailwind css ends here -->
+    <title>Doctor Care</title>
+    <!-- google fonts link starts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- google fonts link ends -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body class="bg-green-light-02 overflow-hidden font-primary">
+   <!-- header section html starts here -->
+    <header id="header" class="bg-[rgba(220,233,226,1)] text-primary fixed top-0 right-0 left-0 w-full  z-50">
+        <nav class="flex justify-between items-center p-4 container mx-auto max-w-screen-xl">
+            <!-- logo -->
+             <div class="text-xl font-bold">
+                <a href="/" class="tetx-black">Doctor 
+                    <span class="text-primary ">Care</span>
+            </a>
+            </div>
+            <!-- menu items -->
+             <ul class="hidden md:flex space-x-8 ">
+                <li><a href="#home" class="hover:text-primary">Início</a></li>
+                <li><a href="#"  class="hover:text-primary"    >Serviços</a></li>
+                <li><a href="#"  class="hover:text-primary"   >Sobre</a></li>
+                <li><a href="#" class="hover:text-primary" >Depoimentos</a></li>
+             </ul>
+             <!-- call to action button -->
+              <div class="hidden md:block ">
+                <a id="contact-btn" class="md:w-56 text-primary hover:text-white border border-primary px-6 py-2.5 rounded-full hover:bg-primary transition-all duration-200 md:flex items-center justify-center">Agendar consulta</a>
+              </div>
+              <!-- mobile navbar -->
+               <div class="md:hidden">
+                <Button  id="mobile-menu-button"  class="navbar-burger flex items-center"p-3>
+                <img src="./Images/menu-icon.svg" alt="menu-icon" class="block h-4 w-4 fill-current ">
+               </Button>
+            </div>
+        </nav>
+        <!-- todo mobile menu -->
+    </header>
+    
+   <!-- header section html ends here -->
+    <!-- hero banner section -->
+     <section class="py-20 bg-greenlight flex items-center justify-between gap-8">
+        <div class="container max-w-screen-xl mx-auto px-4 flex md:flex-row flex-col items-center justify-between">
+            <!-- text content -->
+             <div class="w-full md:w-2/3 text-center sm:text-left mb-8 hero-content">
+                <h2 class="text-sm text-primary font-bold mb-4">BOAS-VINDAS A DOCTORCARE 👋</h2>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Assistência médica simplificada para todos</h1>
+                <p class="text-lg md:text-xl mb-8 md:w-4/5">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.</p>
+               <div class="text-center">
+                 <button class="bg-primary text-white px-6 py-3 rounded-full text-lg hover:bg-brand-green-hover w-full sm:w-72 flex items-center justify-center ">
+                    <a href="#contact" class="">
+                        <i class="ri-whatsapp-line"></i>
+                          Agende sua consulta</a>
+                </button>
+               </div>
+             </div>
+             <!-- image content -->
+              <div class="w-full md:w-1/3 flex items-center justify-center md:justify-end hero-image">
+                <img src="./Images/hero-banner.png" alt="banner-image" class="w-full object-cover">
+              </div>
+        </div>
+     </section>
+    <!-- hero banner section -->
+</body> 
+</html>
